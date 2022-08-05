@@ -1,13 +1,11 @@
 {
   "name": "bisnode-consumer-intelligence",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "main": "./lib/index.js",
   "license": "MIT",
   "scripts": {
     "build": "babel src -d lib",
-    "dev": " babel-node ./src/index.js",
-    "login": "npm-cli-login -u $NPM_USERNAME -p $NPM_PASSWORD -e $NPM_EMAIL",
-    "2npm": "publish"
+    "dev": " babel-node ./src/index.js"
   },
   "homepage": "https://github.com/tibbercom/bisnode-consumer-intelligence",
   "devDependencies": {
