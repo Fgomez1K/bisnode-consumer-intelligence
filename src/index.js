@@ -50,7 +50,8 @@ const personResultMapper = (bisnodePerson) => {
         communicationLanguageScript,
         directMarketingRestriction,
         phoneList,
-        addressList } = bisnodePerson.person;
+        addressList,
+        protectedIdentity } = bisnodePerson.person;
 
     const address = addressList[0];
     const phoneNumber = phoneList[0] && phoneList[0].number;
@@ -64,6 +65,7 @@ const personResultMapper = (bisnodePerson) => {
         dateOfBirth,
         yearOfBirth,
         deceased: !!deceased,
+        protectedIdentity: !!protectedIdentity,
         language: languageMap[communicationLanguageScript] || (address && countryLanguageMap[address.country]) || 'en-US',
         directMarketingRestriction: !!directMarketingRestriction,
         phoneNumber,
