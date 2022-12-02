@@ -36,6 +36,7 @@ const result = client.searchOne({country: "NO", "firstName": "Ola", "lastName": 
 //        "dateOfBirth": "1983-03-22",
 //        "yearOfBirth": 1983,
 //        "deceased": false,
+//        "deregistered": false,
 //        "protectedIdentity": false,
 //        "language": "nb-NO",
 //        "directMarketingRestriction": false,
